@@ -1,0 +1,15 @@
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\bin\Debug\net8.0\AlgoritmosMTPP-CS.exe
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\bin\Debug\net8.0\AlgoritmosMTPP-CS.deps.json
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\bin\Debug\net8.0\AlgoritmosMTPP-CS.runtimeconfig.json
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\bin\Debug\net8.0\AlgoritmosMTPP-CS.dll
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\bin\Debug\net8.0\AlgoritmosMTPP-CS.pdb
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\AlgoritmosMTPP-CS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\AlgoritmosMTPP-CS.AssemblyInfoInputs.cache
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\AlgoritmosMTPP-CS.AssemblyInfo.cs
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\AlgoritmosMTPP-CS.csproj.CoreCompileInputs.cache
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\AlgoritmosMTPP-CS.sourcelink.json
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\AlgoritmosMTPP-CS.dll
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\refint\AlgoritmosMTPP-CS.dll
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\AlgoritmosMTPP-CS.pdb
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\AlgoritmosMTPP-CS.genruntimeconfig.cache
+C:\Users\Atena\Documents\GitHub\AlgoritmosMTPP-CS\obj\Debug\net8.0\ref\AlgoritmosMTPP-CS.dll
