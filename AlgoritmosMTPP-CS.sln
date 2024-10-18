@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmosMTPP-CPP", "AlgoritmosMTPP-CPP.csproj", "{2F675D37-529B-499F-8B9B-ACF3A5BE7881}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoritmosMTPP-CS", "AlgoritmosMTPP-CS.csproj", "{EEE8C660-C520-445E-8FF2-B652221A3C54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2F675D37-529B-499F-8B9B-ACF3A5BE7881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2F675D37-529B-499F-8B9B-ACF3A5BE7881}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2F675D37-529B-499F-8B9B-ACF3A5BE7881}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2F675D37-529B-499F-8B9B-ACF3A5BE7881}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE8C660-C520-445E-8FF2-B652221A3C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE8C660-C520-445E-8FF2-B652221A3C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE8C660-C520-445E-8FF2-B652221A3C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE8C660-C520-445E-8FF2-B652221A3C54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DEEEC942-A9D6-46E2-A8D0-5441FD66FCEF}
+		SolutionGuid = {A5785D53-E0E1-4A36-80DE-BADB32560E01}
 	EndGlobalSection
 EndGlobal

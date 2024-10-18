@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CPP\\AlgoritmosMTPP-CPP.csproj",
-      "projectName": "AlgoritmosMTPP-CPP",
-      "projectPath": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CPP\\AlgoritmosMTPP-CPP.csproj",
+      "projectUniqueName": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\AlgoritmosMTPP-CS.csproj",
+      "projectName": "AlgoritmosMTPP-CS",
+      "projectPath": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\AlgoritmosMTPP-CS.csproj",
       "packagesPath": "C:\\Users\\Atena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CPP\\obj\\",
+      "outputPath": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Atena\\AppData\\Roaming\\NuGet\\NuGet.Config",
