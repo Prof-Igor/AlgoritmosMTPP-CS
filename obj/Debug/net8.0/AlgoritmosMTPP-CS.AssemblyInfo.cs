@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlgoritmosMTPP-CS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d20df54aed0da81d39d83b978fbe0a1fe254ab26")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+500e1e25e791c7d421d0f83d183a7f5af7abc3f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlgoritmosMTPP-CS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlgoritmosMTPP-CS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -211,5 +211,123 @@
             AdaptaGrafo(G, G2, 0);
             return G2;
         }
+
+        public static int RandomWeightedChoice(List<int> elementos)
+        {
+            Random rand = new Random();
+            int index = rand.Next(elementos.Count);  // Escolhe um índice aleatório baseado na quantidade de elementos.
+            return elementos[index];  // Retorna o elemento escolhido aleatoriamente.
+        }
+
+        public static Tuple<List<Vertice>, List<Tuple<int, int>>> VerificaCicloAleatorio(Grafo G, int ini, int v, Tuple<List<Vertice>, List<Tuple<int, int>>> ciclo, List<int> historico)
+        {
+            var filhosDisponiveis = G.idArestas[v].Except(G.idHistorico).ToList();
+
+            while (filhosDisponiveis.Count > 0)
+            {
+                int filhoEscolhido = RandomWeightedChoice(filhosDisponiveis); // Escolha aleatória de um filho.
+                filhosDisponiveis.Remove(filhoEscolhido); // Remove o filho escolhido da lista de filhos disponíveis.
+
+                if (!historico.Contains(filhoEscolhido))
+                {
+                    if (ciclo.Item1.Contains(G.vertices[ini]))
+                        return ciclo;
+                    if (!G.idHistorico.Contains(filhoEscolhido) && !ciclo.Item1.Contains(G.vertices[filhoEscolhido]) && filhoEscolhido != ini)
+                    {
+                        ciclo.Item1.Add(G.vertices[filhoEscolhido]);
+                        historico.Add(filhoEscolhido);
+                        ciclo.Item2.Add(new Tuple<int, int>(v, filhoEscolhido));
+                        ciclo.Item2.Add(new Tuple<int, int>(filhoEscolhido, v));
+
+                        VerificaCicloAleatorio(G, ini, filhoEscolhido, ciclo, historico);
+
+                        if (ciclo.Item1.Last() == G.vertices[filhoEscolhido])
+                            ciclo.Item1.Remove(G.vertices[filhoEscolhido]);
+                    }
+                    else if (ciclo.Item1.Count >= 2 && !ciclo.Item1.Contains(G.vertices[filhoEscolhido]))
+                    {
+                        ciclo.Item1.Add(G.vertices[filhoEscolhido]);
+                        historico.Add(filhoEscolhido);
+                        if (ciclo.Item1.Contains(G.vertices[ini]))
+                        {
+                            ciclo.Item2.Add(new Tuple<int, int>(v, filhoEscolhido));
+                            ciclo.Item2.Add(new Tuple<int, int>(filhoEscolhido, v));
+                            return ciclo;
+                        }
+                        ciclo.Item1.RemoveAt(ciclo.Item1.Count - 1);
+                    }
+                }
+            }
+            return ciclo;
+        }
+
+
+        public static void AdaptaGrafoAleatorio(Grafo G, Grafo G2, int v)
+        {
+            Tuple<List<Vertice>, List<Tuple<int, int>>> cicloCompleto = VerificaCicloAleatorio(G, v, v, new Tuple<List<Vertice>, List<Tuple<int, int>>>(new List<Vertice>(), new List<Tuple<int, int>>()), new List<int>());
+
+            if (cicloCompleto.Item1.Count > 2)
+            {
+                foreach (var item in cicloCompleto.Item1)
+                {
+                    if (item != G.vertices[v])
+                    {
+                        G.idHistorico.Add(G.vertices.IndexOf(G.vertices.Find(x => x.Nome == item.Nome)));
+                        G2.vertices.Add(item);
+                    }
+                }
+
+                foreach (var item in cicloCompleto.Item2)
+                {
+                    if (G2.vertices.Contains(G.vertices[item.Item1]) && G2.vertices.Contains(G.vertices[item.Item2]))
+                        G2.idArestas[G2.vertices.IndexOf(G.vertices[item.Item1])].Add(G2.vertices.IndexOf(G.vertices[item.Item2]));
+                }
+
+                foreach (var item in G.vertices)
+                {
+                    if (!G.idHistorico.Contains(G.vertices.IndexOf(G.vertices.Find(x => x.Nome == item.Nome))))
+                    {
+                        var verticesPossiveis = cicloCompleto.Item1.Where(i => !G.idHistorico.Contains(G.vertices.IndexOf(i))).ToList();
+                        if (verticesPossiveis.Count > 0)
+                        {
+                            Vertice verticeEscolhido = verticesPossiveis[RandomWeightedChoice(verticesPossiveis.Select(i => G.vertices.IndexOf(i)).ToList())];
+                            int verticeIndex = G.vertices.IndexOf(verticeEscolhido);
+                            AdaptaGrafoAleatorio(G, G2, verticeIndex);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                var arestasDisponiveis = G.idArestas[v].Except(G.idHistorico).ToList();
+                while (arestasDisponiveis.Count > 0)
+                {
+                    int arestaEscolhida = RandomWeightedChoice(arestasDisponiveis);
+                    arestasDisponiveis.Remove(arestaEscolhida);
+
+                    if (!G.idHistorico.Contains(arestaEscolhida))
+                    {
+                        G.idHistorico.Add(arestaEscolhida);
+
+                        G2.vertices.Add(G.vertices[arestaEscolhida]);
+                        G2.idArestas[G2.vertices.IndexOf(G2.vertices.Find(x => x.Nome == G.vertices[v].Nome))].Add(G2.vertices.IndexOf(G2.vertices.Find(x => x.Nome == G.vertices[arestaEscolhida].Nome)));
+                        G2.idArestas[G2.vertices.IndexOf(G2.vertices.Find(x => x.Nome == G.vertices[arestaEscolhida].Nome))].Add(G2.vertices.IndexOf(G2.vertices.Find(x => x.Nome == G.vertices[v].Nome)));
+
+                        AdaptaGrafoAleatorio(G, G2, arestaEscolhida);
+                    }
+                }
+            }
+        }
+
+        public static Grafo AdaptarGrafoAleartorio(Grafo G)
+        {
+            Grafo G2 = new Grafo(G.nVertices, G.nCores, G.nArestas);
+            G2.vertices.Add(G.vertices[0]);
+            G2.cores = new List<string>(G.cores);
+
+            G.idHistorico.Add(0);
+            AdaptaGrafoAleatorio(G, G2, 0);
+            return G2;
+        }
     }
 }
