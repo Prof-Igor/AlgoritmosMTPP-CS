@@ -67,6 +67,13 @@
                 calcAtual.Add(innerList); // Adiciona a linha (lista) à matriz
             }
         }
+        public void limpaListaAtual()
+        {
+            foreach (var item in vertices)
+            {
+                item.listaCoresAtual = new List<Tuple<int, List<int>>>();
+            }
+        }
 
         public static Grafo CriarGrafo(string instancia)
         {

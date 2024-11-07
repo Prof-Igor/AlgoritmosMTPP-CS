@@ -1,0 +1,14 @@
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\bin\Debug\net8.0\Probabilidade.exe
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\bin\Debug\net8.0\Probabilidade.deps.json
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\bin\Debug\net8.0\Probabilidade.runtimeconfig.json
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\bin\Debug\net8.0\Probabilidade.dll
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\bin\Debug\net8.0\Probabilidade.pdb
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\Probabilidade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\Probabilidade.AssemblyInfoInputs.cache
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\Probabilidade.AssemblyInfo.cs
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\Probabilidade.csproj.CoreCompileInputs.cache
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\Probabilidade.dll
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\refint\Probabilidade.dll
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\Probabilidade.pdb
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\Probabilidade.genruntimeconfig.cache
+C:\Users\Atena\source\repos\Dinamica\Probabilidade\obj\Debug\net8.0\ref\Probabilidade.dll

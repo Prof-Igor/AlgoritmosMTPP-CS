@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 
 namespace AlgoritmosMTPP_CS
 {
@@ -105,15 +106,25 @@ namespace AlgoritmosMTPP_CS
 
         public static void CalculaCaminho(int idVertice, int? ant, Grafo grafo)
         {
-            var filhos = BuscaFilhos(grafo, idVertice);
+            (List<int>, List<List<int>>) filhos = BuscaFilhos(grafo, idVertice);
 
             foreach (int filhoArvore in filhos.Item1)
             {
-                if (grafo.calcBase[idVertice][filhoArvore].Count == 0)
-                    grafo.calcBase[idVertice][filhoArvore] = new List<int> { grafo.vertices[idVertice].idCor, grafo.vertices[filhoArvore].idCor };
+                if (grafo.vertices[idVertice].listaCoresBase.Find(tupla => tupla.Item1 == filhoArvore) == null)
+                    grafo.vertices[idVertice].listaCoresBase.Add(new Tuple<int, List<int>> (filhoArvore, new List<int> {grafo.vertices[idVertice].idCor, grafo.vertices[filhoArvore].idCor}));
 
-                grafo.calcAtual[idVertice][filhoArvore] = new List<int>(new HashSet<int>((ant.HasValue ? grafo.calcAtual[ant.Value][idVertice] : new List<int>())
-                    .Concat(grafo.calcBase[idVertice][filhoArvore])));
+                //grafo.vertices[idVertice].listaCoresAtual.Add(new Tuple<int, List<int>>(filhoArvore, new List<int>(new HashSet<int>((ant.HasValue ? grafo.vertices[ant.Value].listaCoresBase.Find(tupla => tupla.Item1 == idVertice).Item2 : new List<int>()).Concat(grafo.vertices[idVertice].listaCoresBase.Find(tupla => tupla.Item1 == filhoArvore).Item2)))));
+
+                var listaCoresBaseAnt = ant.HasValue
+                    ? grafo.vertices[ant.Value].listaCoresBase.Find(tupla => tupla.Item1 == idVertice)?.Item2 ?? new List<int>()
+                    : new List<int>();
+
+                var listaCoresBaseAtual = grafo.vertices[idVertice].listaCoresBase.Find(tupla => tupla.Item1 == filhoArvore)?.Item2 ?? new List<int>();
+
+                grafo.vertices[idVertice].listaCoresAtual.Add(
+                    new Tuple<int, List<int>>(filhoArvore, new List<int>(new HashSet<int>(listaCoresBaseAnt.Concat(listaCoresBaseAtual))))
+                );
+
 
                 CalculaCaminho(filhoArvore, idVertice, grafo);
             }
@@ -125,18 +136,22 @@ namespace AlgoritmosMTPP_CS
                 {
                     if (v != idVertice)
                     {
-                        if (grafo.calcBase[idVertice][v].Count == 0)
-                            grafo.calcBase[idVertice][v] = new List<int> { grafo.vertices[idVertice].idCor }
-                                .Concat(ConjuntoCores(grafo, filhosCiclo, idVertice, v)).ToList();
+                        if (grafo.vertices[idVertice].listaCoresBase.Find(tupla => tupla.Item1 == v) == null)
+                            grafo.vertices[idVertice].listaCoresBase.Add(new Tuple<int, List<int>>(v, new HashSet<int> { grafo.vertices[idVertice].idCor }.Concat(ConjuntoCores(grafo, filhosCiclo, idVertice, v)).ToList()));
 
-                        grafo.calcAtual[idVertice][v] = new List<int>(new HashSet<int>((ant.HasValue ? grafo.calcAtual[ant.Value][idVertice] : new List<int>())
-                            .Concat(grafo.calcBase[idVertice][v])));
+                        //grafo.vertices[idVertice].listaCoresAtual.Add(new Tuple<int, List<int>>(v, new List<int>(new HashSet<int>((ant.HasValue ? grafo.vertices[ant.Value].listaCoresAtual.Find(tupla => tupla.Item1 == idVertice).Item2 : new List<int>()).Concat(grafo.vertices[idVertice].listaCoresAtual.Find(tupla => tupla.Item1 == v).Item2)))));
+                        var listaCoresAnt = ant.HasValue
+                            ? grafo.vertices[ant.Value].listaCoresAtual.Find(tupla => tupla.Item1 == idVertice)?.Item2 ?? new List<int>()
+                            : new List<int>();
+
+                        var listaCoresAtual = grafo.vertices[idVertice].listaCoresAtual.Find(tupla => tupla.Item1 == v)?.Item2 ?? new List<int>();
+
+                        grafo.vertices[idVertice].listaCoresAtual.Add(
+                            new Tuple<int, List<int>>(v, new List<int>(new HashSet<int>(listaCoresAnt.Concat(listaCoresAtual))))
+                        );
+
+                        CalculaCaminho(v, idVertice, grafo);
                     }
-                }
-
-                foreach (var filhoCiclo in filhosCiclo)
-                {
-                    CalculaCaminho(filhoCiclo, idVertice, grafo);
                 }
             }
         }
@@ -151,7 +166,7 @@ namespace AlgoritmosMTPP_CS
                     verticesFolha.Add(i);
             }
             */
-            List<string> maiorListaCores = new List<string>();
+            List<int> maiorListaCores = new List<int>();
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
@@ -162,19 +177,13 @@ namespace AlgoritmosMTPP_CS
                 CalculaCaminho(folha, null, grafo);
                 grafo.idHistorico.Clear();
 
-                foreach (var i in grafo.calcAtual)
+                foreach (var i in grafo.vertices)
                 {
-                    foreach (var j in i)
+                    foreach (var j in i.listaCoresAtual)
                     {
-                        List<string> listaAtual = new List<string>();
-                        foreach (var k in j)
+                        if (j.Item2.Count > maiorListaCores.Count)
                         {
-                            listaAtual.Add(grafo.cores[k]);
-                        }
-
-                        if (listaAtual.Count > maiorListaCores.Count)
-                        {
-                            maiorListaCores = listaAtual;
+                            maiorListaCores = j.Item2;
                         }
                     }
                 }
@@ -182,7 +191,7 @@ namespace AlgoritmosMTPP_CS
                 if (maiorListaCores.Count == grafo.nCores)
                     break;
 
-                grafo.limpaCalcAtual();
+                grafo.limpaListaAtual();
             }
 
             stopwatch.Stop();

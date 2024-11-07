@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|c:\\users\\atena\\documents\\github\\algoritmosmtpp-cs\\vertice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|solutionrelative:vertice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|c:\\users\\atena\\documents\\github\\algoritmosmtpp-cs\\grafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|solutionrelative:grafo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|c:\\users\\atena\\documents\\github\\algoritmosmtpp-cs\\calcularotulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|solutionrelative:calcularotulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|c:\\users\\atena\\documents\\github\\algoritmosmtpp-cs\\calculacor2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|solutionrelative:calculacor2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|c:\\users\\atena\\documents\\github\\algoritmosmtpp-cs\\calculacor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|solutionrelative:calculacor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|c:\\users\\atena\\documents\\github\\algoritmosmtpp-cs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|c:\\users\\atena\\documents\\github\\algoritmosmtpp-cs\\vertice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|solutionrelative:vertice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|c:\\users\\atena\\documents\\github\\algoritmosmtpp-cs\\calculacor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEE8C660-C520-445E-8FF2-B652221A3C54}|AlgoritmosMTPP-CS.csproj|solutionrelative:calculacor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,65 +38,75 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CalculaCor2.cs",
-              "DocumentMoniker": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaCor2.cs",
-              "RelativeDocumentMoniker": "CalculaCor2.cs",
-              "ToolTip": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaCor2.cs",
-              "RelativeToolTip": "CalculaCor2.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAIwJkAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T17:02:36.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CalculaCor.cs",
-              "DocumentMoniker": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaCor.cs",
-              "RelativeDocumentMoniker": "CalculaCor.cs",
-              "ToolTip": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaCor.cs",
-              "RelativeToolTip": "CalculaCor.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Title": "CalculaRotulo.cs",
+              "DocumentMoniker": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaRotulo.cs",
+              "RelativeDocumentMoniker": "CalculaRotulo.cs",
+              "ToolTip": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaRotulo.cs",
+              "RelativeToolTip": "CalculaRotulo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAOUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T16:26:58.822Z",
+              "WhenOpened": "2024-10-22T17:42:18.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CalculaCor2.cs",
+              "DocumentMoniker": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaCor2.cs",
+              "RelativeDocumentMoniker": "CalculaCor2.cs",
+              "ToolTip": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaCor2.cs",
+              "RelativeToolTip": "CalculaCor2.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAwwHEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T17:02:36.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CalculaCor.cs",
+              "DocumentMoniker": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaCor.cs",
+              "RelativeDocumentMoniker": "CalculaCor.cs",
+              "ToolTip": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\CalculaCor.cs",
+              "RelativeToolTip": "CalculaCor.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAIwIMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T16:26:58.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAAAswFMAAAAmAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAowGsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T14:32:56.382Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T14:32:56.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Vertice.cs",
               "DocumentMoniker": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\Vertice.cs",
               "RelativeDocumentMoniker": "Vertice.cs",
               "ToolTip": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\Vertice.cs",
               "RelativeToolTip": "Vertice.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T14:19:11.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Grafo.cs",
               "DocumentMoniker": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\Grafo.cs",
               "RelativeDocumentMoniker": "Grafo.cs",
               "ToolTip": "C:\\Users\\Atena\\Documents\\GitHub\\AlgoritmosMTPP-CS\\Grafo.cs",
               "RelativeToolTip": "Grafo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYBAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUBAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T14:11:14.413Z",
               "EditorCaption": ""

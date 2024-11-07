@@ -1,0 +1,14 @@
+C:\Users\Atena\source\repos\Dinamica\Dinamica\bin\Debug\net8.0\Dinamica.exe
+C:\Users\Atena\source\repos\Dinamica\Dinamica\bin\Debug\net8.0\Dinamica.deps.json
+C:\Users\Atena\source\repos\Dinamica\Dinamica\bin\Debug\net8.0\Dinamica.runtimeconfig.json
+C:\Users\Atena\source\repos\Dinamica\Dinamica\bin\Debug\net8.0\Dinamica.dll
+C:\Users\Atena\source\repos\Dinamica\Dinamica\bin\Debug\net8.0\Dinamica.pdb
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\Dinamica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\Dinamica.AssemblyInfoInputs.cache
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\Dinamica.AssemblyInfo.cs
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\Dinamica.csproj.CoreCompileInputs.cache
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\Dinamica.dll
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\refint\Dinamica.dll
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\Dinamica.pdb
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\Dinamica.genruntimeconfig.cache
+C:\Users\Atena\source\repos\Dinamica\Dinamica\obj\Debug\net8.0\ref\Dinamica.dll

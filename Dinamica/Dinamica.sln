@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinamica", "Dinamica\Dinamica.csproj", "{5AA02626-CDB2-4F0B-8F1E-B2792D83356A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Probabilidade", "Probabilidade\Probabilidade.csproj", "{903BC8B6-385A-491E-BDA0-8B1F0D5DE9B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AA02626-CDB2-4F0B-8F1E-B2792D83356A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA02626-CDB2-4F0B-8F1E-B2792D83356A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA02626-CDB2-4F0B-8F1E-B2792D83356A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA02626-CDB2-4F0B-8F1E-B2792D83356A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{903BC8B6-385A-491E-BDA0-8B1F0D5DE9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{903BC8B6-385A-491E-BDA0-8B1F0D5DE9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{903BC8B6-385A-491E-BDA0-8B1F0D5DE9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{903BC8B6-385A-491E-BDA0-8B1F0D5DE9B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5877D736-5476-4BBF-A1A8-7E7230FDFA89}
+	EndGlobalSection
+EndGlobal

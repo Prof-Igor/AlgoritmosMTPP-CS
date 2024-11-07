@@ -108,7 +108,7 @@
             }
             else if (algoritmo == "2")
             {
-                return CalculaCor.CalculaCacto(grafoAdaptado);
+                return CalculaCor2.CalculaCacto(grafoAdaptado);
             }
             return (0, 0);
         }
